@@ -18,6 +18,10 @@ page '/*.txt', layout: false
 
 # General configuration
 
+config[:js_dir] = 'js'
+config[:css_dir] = 'css'
+config[:images_dir] = 'img'
+activate :directory_indexes
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
